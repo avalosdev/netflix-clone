@@ -1,0 +1,114 @@
+:root {
+    /*Declarando variáveis */
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+* {
+    margin: 0; 
+    padding: 0; /*espaçamento */
+    box-sizing: border-box; /*para manter o elemento o tamanho. Tamanho da caixa */    
+}
+
+/* elementos base */
+
+body {
+    background: var(--preta); /*usando variável "preta" */
+    font-family: 'Arial', Times, serif ;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinha de forma vertical*/
+    justify-content: space-between; /* alinha de forma horizontal*/
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+/* para mudar as cores dos links */
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Filme Principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+
+    height: 400px; /* tamanho da caixa */
+    background-size: cover; /* Área de cobertura */
+
+    display: flex;
+    flex-direction: column; /* para deixar na horizontal */
+    justify-content: center; /* para centralizar o display */
+    align-items: flex-start; /* irá iniciar a esquerda */
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;   
+    margin-top: 10px; /* espaçamento */
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 15%; /* espaçamento */
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: azure;
+
+    padding: 15px 30px; /* tamanho */
+    margin-right: 15px; /* Espaçamento entre eles */
+    font-size: 12px;
+
+    cursor: pointer; /* para identificação; seleção do botão com o mouse */  
+    transition: .4s ease all ; /* animação */
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+/* Tamanho das imagens*/
+.box-filme{
+    height: 100%;
+    width: 100%; /* Largura */
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin-top:5px;
+}
