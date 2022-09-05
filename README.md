@@ -5,6 +5,7 @@ A ideia foi recriar a interface do principal site de streaming mundial utilizand
 * HTML5
 * CSS3 
 * JavaScript
+<br>
 Inclusive utilizamos plugins JQuery.
 
 
